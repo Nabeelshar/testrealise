@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "id": "droiddeck",
+      "releases": [
+        {
+          "tag": "DD-Turnip-v0.2.0",
+          "assets": [
+            {
+              "name": "DD-Turnip-v0.2.0.zip",
+              "url": "https://github.com/Nabeelshar/testrealise/releases/download/turnip-drivers/DD-Turnip-v0.2.0.zip",
+              "size": 6081741
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
