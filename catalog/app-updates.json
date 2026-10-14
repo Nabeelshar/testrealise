@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "sourceRepo": "Nabeelshar/Playdeck",
+  "ciRepo": "Nabeelshar/testrealise",
+  "generatedAt": 1791977966488,
+  "stable": {
+    "tag": "playdeck-v0.4.6",
+    "title": "PlayDeck 0.4.6",
+    "summary": "\u2022 Component downloads now survive backgrounding. Proton, desktop, Turnip driver, and Decky Loader installs are wired through the foreground BackgroundDownloadService, so starting a download and switching to another app no longer kills it. Downloads show a progress notification and verify checksums before installing.\n\u2022 Release signing works again. The build's sign step now receives the release key (secrets: inherit was missing on the reusable sign workflow call), so signed APKs are produced for all four variants.\n\u2022 CI cleanup. Dropped the announce/catalog jobs, which published to the upstream Droid-Deck CI app that doesn't exist in this fork and always failed.",
+    "commit": "bd200ae46404ca44bb93c6e53bb0d0a3d3b64d56",
+    "pr": 0,
+    "version": "0.4.6",
+    "versionCode": 18,
+    "publishedAt": 1791972619000,
+    "url": "https://github.com/Nabeelshar/testrealise/releases/tag/playdeck-v0.4.6",
+    "apks": {
+      "com.playdeck.launcher": {
+        "name": "PlayDeck-v0.4.6.apk",
+        "url": "https://github.com/Nabeelshar/testrealise/releases/download/playdeck-v0.4.6/PlayDeck-v0.4.6.apk",
+        "size": 54793471,
+        "sha256": "4261139d4f4687931550112ce6812ad934d6b72e680d155df5db5e117dbd6399",
+        "packageName": "com.playdeck.launcher",
+        "versionCode": 18,
+        "signerSha256": "c9a5bceeced4d0a751a5ac54e492eb6a4e228ff2a3677042bcc4ef45d5699a42"
+      }
+    }
+  },
+  "preview": null,
+  "recentPreviews": [],
+  "tests": []
+}
