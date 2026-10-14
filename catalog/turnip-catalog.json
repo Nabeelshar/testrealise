@@ -1,7 +1,7 @@
 {
   "sources": [
     {
-      "id": "droiddeck",
+      "id": "playdeck",
       "releases": [
         {
           "tag": "DD-Turnip-v0.2.0",
