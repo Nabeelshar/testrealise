@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report a crash — PlayDeck</title>
+<meta name="description" content="Report a PlayDeck crash or a game that won't start.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="mark" aria-hidden="true">▶</span> PlayDeck</a>
+    <nav>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="report-crash.html">Report a crash</a>
+      <a href="https://github.com/Nabeelshar/Playdeck">Source</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow">
+  <h1>Report a crash</h1>
+  <p>PlayDeck sends no automatic crash reports — this form is how a report reaches us. Fill it in, press <strong>Open report on GitHub</strong>, and your report opens as a pre-filled GitHub issue. Submit it there, then attach your log file to the issue (step 2 below).</p>
+
+  <div class="callout">
+    <strong>Before you report:</strong>
+    <ol>
+      <li>In the app, reproduce the crash once if you can, then use <strong>Share Logs</strong> to save the redacted log ZIP. The app scrubs account names, tokens and secrets from it before sharing.</li>
+      <li>After submitting the issue, drag the log ZIP onto the issue page to attach it. Logs are what let us actually fix the bug.</li>
+      <li><strong>Reports are public.</strong> Never paste passwords, tokens, or anything private. If a log line looks private, delete that line before attaching.</li>
+    </ol>
+  </div>
+
+  <form id="crash-form">
+    <label>What happened? <span class="req">*</span>
+      <select id="kind" required>
+        <option value="App crash">The app crashed / closed unexpectedly</option>
+        <option value="Game won't start">A game won't start</option>
+        <option value="Game crash / freeze">A game crashed or froze</option>
+        <option value="Download / install failure">A download or install failed</option>
+        <option value="Controller / input problem">Controller or input problem</option>
+        <option value="Other">Something else</option>
+      </select>
+    </label>
+    <label>Short summary <span class="req">*</span>
+      <input id="summary" type="text" maxlength="100" placeholder="e.g. App closes when I tap Steam" required>
+    </label>
+    <label>PlayDeck version <span class="req">*</span>
+      <input id="version" type="text" placeholder="e.g. 0.4.6 (Settings → About, or the installer filename)" required>
+    </label>
+    <label>Device
+      <input id="device" type="text" placeholder="e.g. Galaxy S24 Ultra, Android 15">
+    </label>
+    <label>Game (if the problem is with one game)
+      <input id="game" type="text" placeholder="e.g. Hades II">
+    </label>
+    <label>What were you doing when it happened? <span class="req">*</span>
+      <textarea id="steps" rows="4" placeholder="1. Opened PlayDeck…&#10;2. Tapped…&#10;3. Then…" required></textarea>
+    </label>
+    <label>Log excerpt (optional — paste the last lines of the session log here if you have them)
+      <textarea id="log" rows="6" placeholder="Paste only the lines around the failure. Remove anything that looks private."></textarea>
+    </label>
+    <p><button class="btn" type="submit">Open report on GitHub →</button></p>
+    <p class="note">This opens github.com with your report pre-filled. Nothing is sent until you press Submit there.</p>
+  </form>
+
+  <p class="note">No GitHub account? <a href="https://github.com/Nabeelshar/Playdeck/issues">Browse existing issues</a> — your bug may already be reported. Or ask on an existing issue instead of opening a duplicate.</p>
+</main>
+<footer class="wrap"><p>PlayDeck · GPL-3.0 · <a href="privacy-policy.html">Privacy Policy</a> · <a href="report-crash.html">Report a crash</a></p></footer>
+<script>
+document.getElementById('crash-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var v = function (id) { return document.getElementById(id).value.trim(); };
+  var title = '[Crash] ' + v('summary');
+  var body = [
+    '## Report',
+    '',
+    '- **What:** ' + v('kind'),
+    '- **PlayDeck version:** ' + v('version'),
+    '- **Device:** ' + (v('device') || '—'),
+    '- **Game:** ' + (v('game') || '—'),
+    '',
+    '## What happened',
+    '',
+    v('steps'),
+    '',
+    '## Log excerpt',
+    '',
+    v('log') ? '```\n' + v('log') + '\n```' : '_No log pasted — please attach the Share Logs ZIP to this issue._',
+    '',
+    '---',
+    '_Submitted from the PlayDeck website crash-report form._'
+  ].join('\n');
+  var url = 'https://github.com/Nabeelshar/Playdeck/issues/new'
+    + '?labels=' + encodeURIComponent('bug,crash-report')
+    + '&title=' + encodeURIComponent(title)
+    + '&body=' + encodeURIComponent(body);
+  window.open(url, '_blank', 'noopener');
+});
+</script>
+</body>
+</html>

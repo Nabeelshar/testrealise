@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — PlayDeck</title>
+<meta name="description" content="PlayDeck privacy policy: the app collects nothing.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="mark" aria-hidden="true">▶</span> PlayDeck</a>
+    <nav>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="report-crash.html">Report a crash</a>
+      <a href="https://github.com/Nabeelshar/Playdeck">Source</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap narrow">
+  <h1>Privacy Policy for PlayDeck</h1>
+  <p><strong>Last updated:</strong> October 14, 2026</p>
+
+  <h2>Introduction</h2>
+  <p>PlayDeck is an Android game launcher that lets you play Steam, GOG, Epic Games, and Amazon Games titles on your Android device, by running a Linux runtime with Proton on your phone. This policy explains what data PlayDeck handles. The short version: <strong>PlayDeck collects nothing.</strong> There is no PlayDeck account, no PlayDeck server, no analytics, and no automatic crash reporting. Everything the app needs lives on your device.</p>
+
+  <h2>Information We Collect</h2>
+  <p><strong>None.</strong> PlayDeck does not collect, transmit, or sell personal data. There is no account to create, and the app never sends your information to us — we operate no server that could receive it.</p>
+
+  <h2>Information Stored On Your Device</h2>
+  <p>The following stays on your device and is never sent to PlayDeck:</p>
+  <ul>
+    <li><strong>Store sign-ins:</strong> When you sign in to Steam, GOG, Epic, or Amazon, your session lives inside the on-device Linux runtime, the same way it would on a PC. PlayDeck never sees or transmits your store passwords.</li>
+    <li><strong>Games and saves:</strong> Your games, save files, and settings are stored in the app's private storage and on your device's storage, where you put them.</li>
+    <li><strong>App settings:</strong> Controller layouts, per-game compatibility profiles, and preferences are stored locally.</li>
+    <li><strong>Session logs:</strong> The app writes session logs to your Downloads folder so a failed run can be inspected. Log contents are redacted (account names, tokens, and secrets are scrubbed) before they are ever shared, and they are shared only when you explicitly tap Share — the app never uploads them on its own.</li>
+  </ul>
+
+  <h2>Network Connections</h2>
+  <p>The app connects to the internet for the following, and only for these purposes:</p>
+  <ul>
+    <li><strong>Component downloads:</strong> On first setup, the app downloads the Linux runtime, Proton builds, the KDE desktop, and drivers from our public release hosting (GitHub). These are plain file downloads; no personal data is sent with them.</li>
+    <li><strong>Store services:</strong> When you use Steam, GOG, Epic, or Amazon features, the app connects to those services directly. Your use of them is covered by their own privacy policies (see Third-Party Services below).</li>
+    <li><strong>Game downloads and updates:</strong> Your games download from the store you bought them on, or from the sources you choose.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <p>PlayDeck requests Android permissions only to function as a game launcher:</p>
+  <ul>
+    <li><strong>Internet / network state / Wi-Fi state:</strong> To download components and games, and to keep downloads running in the background.</li>
+    <li><strong>Location (coarse and fine):</strong> Android requires a location grant for Wi-Fi network names and scan results. PlayDeck uses it only for Wi-Fi SSIDs, never for coordinates, and a location grant alone never opts you into anything. SSID reporting is separately opt-in.</li>
+    <li><strong>Storage:</strong> To install games and store their data.</li>
+    <li><strong>Notifications / foreground service / wake lock:</strong> To keep downloads and game sessions running when the app is in the background, and to tell you their status.</li>
+    <li><strong>Bluetooth:</strong> To connect wireless controllers.</li>
+    <li><strong>Microphone:</strong> For in-game voice chat through Steam, only while you are in a game that uses it.</li>
+    <li><strong>Install packages:</strong> To install game components that arrive as packages.</li>
+    <li><strong>Vibration:</strong> For controller rumble.</li>
+  </ul>
+
+  <h2>Advertising</h2>
+  <p><strong>Advertising is currently disabled in PlayDeck.</strong> The app contains the Google AdMob SDK, but it shows no ads and makes no ad requests. If advertising is enabled in a future version, this policy will be updated before release, and ad data would be handled by Google under its own policy (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>).</p>
+
+  <h2>Crash Reports</h2>
+  <p>PlayDeck has <strong>no automatic crash reporting</strong>. No crash data, diagnostics, or usage statistics leave your device unless you choose to share a session log (see Session logs above). If you send us a log, we use it only to fix the problem you reported. You can submit a report on our <a href="report-crash.html">Report a crash</a> page.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>When you use them, these services apply their own policies:</p>
+  <ul>
+    <li><strong>Steam</strong> (<a href="https://store.steampowered.com/privacy_agreement/">Privacy Policy</a>)</li>
+    <li><strong>GOG</strong> (<a href="https://support.gog.com/hc/en-us/articles/360016751897">Privacy Policy</a>)</li>
+    <li><strong>Epic Games</strong> (<a href="https://www.epicgames.com/site/en-US/privacypolicy">Privacy Policy</a>)</li>
+    <li><strong>Amazon Games</strong> (<a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ">Privacy Policy</a>)</li>
+    <li><strong>GitHub</strong> (component downloads are hosted on GitHub; <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy Statement</a>)</li>
+  </ul>
+
+  <h2>Your Rights and Choices</h2>
+  <ul>
+    <li>You can clear the app's data at any time via Android Settings, which deletes everything PlayDeck stored locally.</li>
+    <li>You can uninstall the app to delete all local data.</li>
+    <li>Your store accounts (Steam, GOG, Epic, Amazon) are managed by those services; PlayDeck cannot access or delete them — use each service's own account settings.</li>
+    <li>You can revoke any permission at any time in Android Settings. Revoking storage, network, or notification permission will limit what the app can do.</li>
+  </ul>
+
+  <h2>Children's Privacy</h2>
+  <p>PlayDeck is not directed at children under 13, and we do not knowingly collect data from children — we collect data from no one. Note that Steam and other stores have their own age requirements for accounts.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy when the app changes (for example, if advertising is ever enabled). The current version is always at this page, and the date at the top shows when it last changed.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: open an issue at <a href="https://github.com/Nabeelshar/Playdeck/issues">github.com/Nabeelshar/Playdeck/issues</a></p>
+
+  <h2>Open Source</h2>
+  <p>PlayDeck is open-source software licensed under GPL-3.0, a fork of DroidDeck. Source code: <a href="https://github.com/Nabeelshar/Playdeck">github.com/Nabeelshar/Playdeck</a></p>
+</main>
+<footer class="wrap"><p>PlayDeck · GPL-3.0 · <a href="privacy-policy.html">Privacy Policy</a> · <a href="report-crash.html">Report a crash</a></p></footer>
+</body>
+</html>
