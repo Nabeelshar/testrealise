@@ -5,7 +5,8 @@
       {
         "tag": "GE-Proton11-9",
         "url": "https://github.com/Nabeelshar/testrealise/releases/download/ge-proton-11-9/GE-Proton11-9-aarch64.tar.gz",
-        "size": 647938895
+        "size": 647938895,
+        "sha256": "948957ea8929b8a1b444c8b9278f87b7cba0006ccfee51cd551ab69555c34265"
       }
     ]
   },
@@ -15,7 +16,8 @@
       {
         "tag": "cachyos-11.0-20261005-slr",
         "url": "https://github.com/Nabeelshar/testrealise/releases/download/proton-cachyos/proton-cachyos-arm64.tar.xz",
-        "size": 355998720
+        "size": 356312716,
+        "sha256": "e59b646e73de4af21ff2f6c795b28e7b6c889214b3c6daf8e65a56634cd06c37"
       }
     ]
   },
@@ -25,7 +27,8 @@
       {
         "tag": "DroidDeck-Proton-11-7.5",
         "url": "https://github.com/Nabeelshar/testrealise/releases/download/DroidDeck-Proton-11-7.5/DroidDeck-Proton-11-7.5-aarch64.tar.gz",
-        "size": 656670720
+        "size": 625775670,
+        "sha256": "333744eb332d89764a4d1fdc31a8f88813235e539e648c5bc25a9ccc44139264"
       }
     ]
   }
